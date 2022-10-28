@@ -35,8 +35,8 @@
     quick-tap-ms = <210>;  // repeat tap if pressed twice within 210ms
 
     // the following might be useful for home row mods
-    // if you press o mt key and press another key before the tapping-term-ms
-    // it will send the tap optin for mt key and the key you pressed
+    // if you press a mt key and press another key before the tapping-term-ms
+    // it will send the tap option for mt key and the key you pressed
     // hold-trigger-key-positions = <0>;  // tap on interrupt
 };
 
