@@ -32,8 +32,11 @@
 &mt {
     tapping-term-ms = <TAPPING_TERM_MS>;
     flavor = "tap-preferred";
-    // TODO: check what this does
-    // quick-tap-ms = <210>;              // repeat on tap-into-hold
+    quick-tap-ms = <210>;  // repeat tap if pressed twice within 210ms
+
+    // the following might be useful for home row mods
+    // if you press o mt key and press another key before the tapping-term-ms
+    // it will send the tap optin for mt key and the key you pressed
     // hold-trigger-key-positions = <0>;  // tap on interrupt
 };
 
@@ -119,6 +122,7 @@ ZMK_LAYER(default_layer,
                                                     &kp LGUI    &lt_spc LOWER 0 &mt LG(LSHFT) RET   &mt RALT RET  &bs_del_raise &kp LGUI
      //                                           ╰─────────────┴─────────────┴─────────────╯     ╰─────────────┴─────────────┴─────────────╯
 )
+
 
 ZMK_LAYER(lower_layer,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮     ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
